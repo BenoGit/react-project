@@ -1,7 +1,5 @@
 import React, {Component}  from 'react';
 import'./GameStreams.css'
-import Games from '../Games'
-
 class GameStreams extends Component{
 
     constructor() {
@@ -9,7 +7,8 @@ class GameStreams extends Component{
         this.state = {
             stream:[],
             gamebyid: 32982,
-            gamebyname: "Grand Theft Auto V"
+            gamebyname: "Grand Theft Auto V",
+            input: ""
         }
     }
 
@@ -60,12 +59,26 @@ class GameStreams extends Component{
     })
   }
 
+
+    searchbutton=()=>{
+        console.log(this.state.gamebyname)
+    }
+
     render(){
         
         console.log(this.state.stream)
         return(
         <div>
-            <h1 className="popTitle">Top Streams For {this.state.gamebyname}</h1>   
+            <h1 className="popTitle">Top Streams For {this.state.gamebyname}</h1>
+            <div className="gameSearch">
+                <input
+                type="text"
+                name="Search"
+                placeholder="Search Game"
+                value={this.props.gamebyname}
+                ></input>
+                <button onClick={this.searchbutton}>Search</button>
+            </div>
             <div className="grid">
                 {this.renderGamesid()} 
             </div>

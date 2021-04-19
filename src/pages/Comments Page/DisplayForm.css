@@ -4,3 +4,10 @@
     grid-gap: 1rem;
     grid-auto-rows: minmax(50px, auto);
 }
+
+.commentCard{
+   border-width: 5px; 
+}
+
+
+

@@ -1,6 +1,5 @@
 import React, {Component}  from 'react';
 import './Games.css';
-import GameStreams from './TopStreams/GameStreams'
 
 
 class Games extends Component{

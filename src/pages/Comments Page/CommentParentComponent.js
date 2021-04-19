@@ -10,11 +10,7 @@ class CommentParentComponent extends React.Component {
   }
 
 
-  handleChange = event => {
-    this.setState({
-      [event.target.name]: event.target.value
-    })
-  }
+
   
   fetchpost = () =>{
     const serverurl="http://localhost:4000/posts"
@@ -39,7 +35,6 @@ class CommentParentComponent extends React.Component {
       <div>
         <Form
           formData={this.state}
-          handleChange={this.handleChange}
         />
         <button onClick={this.fetchpost}>Post</button>
         <DisplayForm formData={this.state} />
