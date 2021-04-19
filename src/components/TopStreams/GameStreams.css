@@ -1,0 +1,18 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(50px, auto);
+   }
+
+   
+.gameThumbArt {
+    border: 2px solid #ffffff;
+}
+
+.streamT{text-decoration: underline;
+        color: white;}
+
+.popTitle{
+    color: white;
+}
