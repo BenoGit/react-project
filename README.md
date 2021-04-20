@@ -1,4 +1,4 @@
-Run @ https://benogit.github.io/react-project
+Run @ https://benogit.github.io/
 
 Commentform POST not functional but was before development through localhost
 
