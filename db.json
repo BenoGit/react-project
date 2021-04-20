@@ -9,36 +9,6 @@
       "Name": "Jack",
       "Comment": "Rachet and Clank",
       "id": 2
-    },
-    {
-      "Name": "Michael",
-      "Comment": "Runescape",
-      "id": 3
-    },
-    {
-      "Name": "Beth",
-      "Comment": "Hello Kitty",
-      "id": 4
-    },
-    {
-      "Name": "Simon",
-      "Comment": "ThumbWar",
-      "id": 5
-    },
-    {
-      "Name": "Cronk",
-      "Comment": "Kuzco's Poison",
-      "id": 6
-    },
-    {
-      "Name": "David",
-      "Comment": "Simpsons hit and run",
-      "id": 7
-    },
-    {
-      "Name": "Bill",
-      "Comment": "TikTakToe",
-      "id": 8
     }
   ]
 }
