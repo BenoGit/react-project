@@ -1,4 +1,4 @@
-Run @ https://benogit.github.io/
+Run @ https://benogit.github.io/react-project/ through pages Home contents doesnt show up for some reason, when i run npm start it opened at the correct page though
 
 Commentform POST not functional but was before development through localhost
 
