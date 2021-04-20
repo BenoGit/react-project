@@ -17,12 +17,13 @@ class CommentParentComponent extends React.Component {
   }
   
   fetchpost = () =>{
-    const serverurl="http://localhost:4000/posts"
+    const serverurl="https://my-json-server.typicode.com/benogit/react-project-db/posts"
     fetch(serverurl, { 
         method: 'POST',
         headers:{
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json',
+          'Accept': 'application/json;odata.metadata=full'
         },
         body: JSON.stringify({
           Name: this.state.Name,

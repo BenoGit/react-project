@@ -16,13 +16,14 @@ class DisplayForm extends React.Component {
     }
 
     fetchdata = () =>{
-        const serverurl="http://localhost:4000/posts"
+        const serverurl="https://my-json-server.typicode.com/benogit/react-project-db/posts"
         fetch(serverurl, { 
             method: 'GET',
-            headers: new Headers({
+            headers:{
+            'Access-Control-Allow-Origin': '*',
             'Content-Type': 'application/json',
-            'Accept': 'application/json'
-            })
+            'Accept': 'application/json;odata.metadata=full'
+            }
         })
         .then(response=> response.json())
         .then(data=>{
